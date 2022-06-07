@@ -1,0 +1,24 @@
+Assignment
+--> Voting App
+
+
+~command- kubectl get svc
+
+NodePort for result app was 10.106.66.38 and port number was 31001
+NodePort for voting app was 10.104.220.63 and port number was 31000
+
+~command- kubectl get po
+For both result and vote apps, single containers were created each
+
+//8. Now try to delete the Pods one by one (first voting Pod, then worker pod, then db pod) and see what happens to the voting and result app after deleting.
+
+
+~commmand- kubectl delete po POD_NAME
+
+After deleting the voting pod , a new pod was created same for other pods also.
+
+The result pod stopped working after deleting the db pod.
+
+For making the result pod working-
+When result pod is deleted, a new pod  got created and the application started working fine.
+
