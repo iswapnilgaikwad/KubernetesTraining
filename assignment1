@@ -1,0 +1,6 @@
+//Assignment 1
+
+In replicaset, we specify the number of pods. So it ensures that the given number of pods are running.
+Whereas in Daemonset, a single copy of pod runs in every worker node.
+
+Hence, if we want to create single instance of pod on each node then we will use daemonSet
