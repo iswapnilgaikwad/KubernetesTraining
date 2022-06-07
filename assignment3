@@ -1,0 +1,14 @@
+//Assigment 3
+
+Firstly i will give command "kubectl get svc" and then check whether NodePort is present or clusterIp is there.
+If it is clusterIp then i Will change it to NodePort by giving command
+
+  -->  kubectl edit service NAME_OF_SERVICE 
+
+(As the application is already deployed, we should not change it by changing in yaml file manually).
+
+
+If it is still not working, then i will check if the port which i have specified is used by any other application. 
+if yes, then i will change port of another application to any other port.
+
+If it still not works  will try deleting the pod and re deploying them.
