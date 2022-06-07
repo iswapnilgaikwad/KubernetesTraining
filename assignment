@@ -22,3 +22,5 @@ The result pod stopped working after deleting the db pod.
 For making the result pod working-
 When result pod is deleted, a new pod  got created and the application started working fine.
 
+*A new pod gets created because of replica set. (If we specify 3 replicas in replicaset yaml file, then it will keep three pods. i.e. If 2 pod is deleted, 2 will created.. It will maintain 3 pods in this case )
+
